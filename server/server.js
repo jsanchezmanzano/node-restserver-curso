@@ -21,7 +21,8 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 // Configuración global de rutas
 app.use(require('./routes/index'));
 
-
+// Subir archivos
+//app.use( fileUpload({ useTempFiles: true }) );
 
 mongoose.connect(process.env.URLDB, (err, res) => {
 
